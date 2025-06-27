@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HiddenRio Tours</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #3b7751;
+      --amarelo: #f7d740;
+      --azul: #002776;
+      --branco: #ffffff;
+      --preto: #000000;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--branco);
+      color: var(--verde);
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                  url('clasicos-de-arquitectura-museo-de-arte-contemporaneo-niteroi-mac-oscar-niemeyer_36.jpg') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: var(--branco);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero-logo img {
+      width: 220px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .btn-amarelo {
+      background-color: var(--amarelo);
+      color: var(--preto);
+      border: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn-verde {
+      background-color: var(--verde);
+      color: var(--branco);
+      border: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .nav-link {
+      color: var(--verde);
+      font-weight: bold;
+    }
+
+    h2 {
+      color: var(--verde);
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: var(--branco);
+    }
+
+    .package:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section com fundo MAC e logo centralizada -->
+  <header class="hero">
+    <div class="hero-logo">
+      <img src="logo.png.png" alt="HiddenRio Tours Logo">
+    </div>
+    <h1>Os melhores passeios do<br><strong>RIO DE JANEIRO</strong></h1>
+    <p>Muito além dos pontos turísticos: Revelamos os tesouros escondidos do Estado do Rio de Janeiro!</p>
+    <div>
+      <a href="#pacotes" class="btn btn-amarelo btn-lg">RESERVAR MEU PASSEIO</a>
+      <a href="https://wa.me/5521968471111" class="btn btn-verde btn-lg">FALAR COM CONSULTOR</a>
+    </div>
+  </header>
+
+  <!-- Navigation Links -->
+  <div class="container text-center my-5">
+    <div class="row">
+      <div class="col"><a class="nav-link" href="#pacotes">Pacotes</a></div>
+      <div class="col"><a class="nav-link" href="#feedbacks">Feedbacks</a></div>
+      <div class="col"><a class="nav-link" href="#sobre">Sobre Nós</a></div>
+    </div>
+  </div>
+
+  <!-- Why Choose Section -->
+  <section class="bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Por que escolher o nosso serviço de guia turístico?</h2>
+      <p class="lead text-muted">Oferecemos experiências autênticas, atendimento personalizado e guias locais experientes com um olhar único sobre o Rio de Janeiro.</p>
+    </div>
+  </section>
+
+  <!-- Pacotes -->
+  <section id="pacotes">
+    <div class="container text-center">
+      <h2 class="mb-4">Pacotes</h2>
+      <p>Conteúdo em construção.</p>
+    </div>
+  </section>
+
+  <!-- Feedbacks -->
+  <section id="feedbacks" class="bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Feedbacks</h2>
+      <p>Conteúdo em construção.</p>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre">
+    <div class="container text-center">
+      <h2 class="mb-4">Sobre Nós</h2>
+      <p>Conteúdo em construção.</p>
+    </div>
+  </section>
+
+   <!-- FAQ -->
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              O tour é feito em português ou tem outros idiomas?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Nossos tours são oferecidos em português, inglês e espanhol, conforme a necessidade do cliente.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Os passeios incluem transporte?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim, a maioria dos pacotes inclui transporte, mas isso será detalhado na descrição de cada tour.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              É necessário pagar antecipadamente?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Trabalhamos com reservas antecipadas com pagamento seguro. Garantimos reembolso em caso de cancelamento com antecedência mínima de 48h.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+              Os passeios são recomendados para crianças e idosos?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim! Temos opções de roteiros adaptados para todas as idades, com nível de esforço leve e acessibilidade.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+              Quais formas de pagamento são aceitas?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Aceitamos cartões de crédito, débito, Pix e pagamentos via PayPal para maior segurança e comodidade.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+              O que acontece em caso de chuva no dia do passeio?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Em caso de mau tempo, reagendamos ou adaptamos o passeio para garantir a segurança e conforto dos participantes.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container text-center">
+      <h4>Contato</h4>
+      <p>Telefone: +55 21 96847-1111</p>
+      <p>Email: contacthiddenrio@gmail.com</p>
+      <p>Instagram: @hidden.rrio | TikTok: @ishinnrio</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
