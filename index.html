@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HiddenRio Tours</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --verde: #3b7751;
+      --amarelo: #f7d740;
+      --azul: #002776;
+      --branco: #ffffff;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--branco);
+      color: var(--verde);
+    }
+
+    .navbar {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      background-color: transparent !important;
+    }
+
+    .navbar-brand img {
+      height: 100px;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('515c63d4-4066-424a-8417-50ba1d9de799.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: var(--branco);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .btn-warning {
+      background-color: var(--amarelo);
+      border: none;
+      color: #000;
+    }
+
+    .nav-link {
+      cursor: pointer;
+      color: var(--verde);
+      font-weight: 600;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    h2, .nav-link:hover {
+      color: var(--verde);
+    }
+
+    .package:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .faq-question {
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: var(--branco);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="logo.png.png" alt="HiddenRio Tours">
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1 class="display-4 fw-bold">Descubra o Rio como nunca antes</h1>
+    <p class="lead">Pacotes únicos, experiências inesquecíveis e lugares escondidos do paraíso carioca</p>
+    <a href="#pacotes" class="btn btn-warning btn-lg mt-3">Ver Pacotes</a>
+  </header>
+
+  <!-- Navigation Links -->
+  <div class="container text-center my-5">
+    <div class="row">
+      <div class="col"><a class="nav-link" href="#pacotes">Pacotes</a></div>
+      <div class="col"><a class="nav-link" href="#feedbacks">Feedbacks</a></div>
+      <div class="col"><a class="nav-link" href="#sobre">Sobre Nós</a></div>
+    </div>
+  </div>
+
+  <!-- Why Choose Section -->
+  <section class="bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Por que escolher o nosso serviço de guia turístico?</h2>
+      <p class="lead text-muted">Oferecemos experiências autênticas, atendimento personalizado e guias locais experientes com um olhar único sobre o Rio de Janeiro.</p>
+    </div>
+  </section>
+
+  <!-- Pacotes -->
+  <section id="pacotes">
+    <div class="container text-center">
+      <h2 class="mb-4">Pacotes</h2>
+      <p>Conteúdo em construção.</p>
+    </div>
+  </section>
+
+  <!-- Feedbacks -->
+  <section id="feedbacks" class="bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Feedbacks</h2>
+      <p>Conteúdo em construção.</p>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre">
+    <div class="container text-center">
+      <h2 class="mb-4">Sobre Nós</h2>
+      <p>Conteúdo em construção.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+      <div class="accordion" id="faqAccordion">
+        <!-- Conteúdo omitido para brevidade -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="container text-center">
+      <h4>Contato</h4>
+      <p>Telefone: +55 21 96847-1111</p>
+      <p>Email: contacthiddenrio@gmail.com</p>
+      <p>Instagram: @hidden.rrio | TikTok: @ishinnrio</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
